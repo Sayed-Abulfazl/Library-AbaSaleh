@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    direction: rtl;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+header,main,footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header,footer{
+    background-color: rgba(250, 231, 206, 0.882);
+}
+
+header > h1{
+    margin: 30px 0;
+    font-size: 40px;
+}
+header{
+    border-radius: 20px 20px 0 0 ;
+}
+header form input{
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+main #head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#head span{
+    margin-left: 10px;
+    font-size: 16px;
+}
+#q{
+    font-weight: bold;
+    color: green;
+}
+.date{
+    direction: ltr;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+main #head > h2{
+    margin: 10px;
+}
+#books-contain{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#books-contain ul, ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#books-contain ul li{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 10px auto;
+    padding-right: 8px;
+    border-right: 5px solid mintcream;
+    transition: all 0.3s;
+}
+#books-contain ul li .nameBook{
+    font-size: 20px;
+    float: right;
+}
+#books-contain ul li .deleteBook{
+    float: left;
+    padding: 3px 8px;
+    background-color: chocolate;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#books-contain ul li:hover{
+    border-color: red;
+}
+#books-contain ul li .deleteBook:hover{
+    background-color: red;
+}
+#books-contain ul li:active{
+    border-color: red;
+}
+#books-contain ul li .deleteBook:active{
+    background-color: red;
+}
+
+main #hide-contain{
+    width: 100%;
+    margin-right: 30px;
+    font-weight: bold;
+    margin-block: 10px;
+}
+main #hide-contain #hide{
+    margin-left: 10px;
+}
+
+
+footer{
+    padding-block: 20px;
+}
+
+footer #addBook-contain form input{
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    outline: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+footer #addBook-contain form button{
+    font-size: 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 5px;
+}
+footer #addBook-contain form button:active{
+    transform: scale(1.1);
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    min-width: 350px;
+    width: 50%;
+    background-color: rgba(0, 0, 255, 0.6);
+    border-radius: 20px 20px 0 0;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.locBook{
+    font-size: 12px;
+    font-weight: bold;
+}
+form div{
+    position: relative;
+}
+.warnspan{
+    font-size: 22px;
+    color: red;
+    z-index: 2;
+    top: 35%;
+    position: absolute;
+    left: 2%;
+    display: none;
+}

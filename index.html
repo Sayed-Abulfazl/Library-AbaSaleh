@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتابخانه مکتب اباصالح</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>" کتابخانه مکتب اباصالح "</h1>
+            <p class="date"></p>
+            <div class="search-contain">
+                <form>
+                    <input type="text" placeholder="اینجا جستجو کنید ...">
+                </form>
+            </div>
+        </header>
+        <main>
+            <div id="head">
+                <h2 id="headText">فهـــرست کتــاب هـــا</h2>
+                <span>
+                    تعداد کتاب ها:
+                    <span id="q"></span>
+                </span>
+            </div>
+
+            <div id="books-contain">
+                <ul>
+
+                </ul>
+            </div>
+
+            <div id="hide-contain">
+                <form>
+                    <input type="checkbox" id="hide">
+                    <label for="hide">مخفی کردن کتاب ها</label>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div id="addBook-contain">
+                <form>
+                    <div>
+                        <input autocomplete="off" type="text" id="n" placeholder="کتاب جدید...">
+                        <span class="warnspan" id="ws1">*</span>
+                    </div>
+                    <div>
+                        <input autocomplete="off" type="text" id="m" placeholder=" موقعیت کتاب...">
+                        <span class="warnspan" id="ws2">*</span>
+                    </div>
+                    <button class="btn" id="addBook-btn">اضافه</button>
+                </form>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
